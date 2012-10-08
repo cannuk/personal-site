@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require underscore
+//= require backbone
+//= require shared/yql_model
+//= require_tree ./weather
+//= require KineticJS/dist/kinetic-core
+//= require cloudgen/cloudgen
+//= require app
+

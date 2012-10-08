@@ -1,0 +1,131 @@
+$skyoffset: 90px;
+$skyheight: 250px;
+$weatherExt: 100px;
+
+body{
+  background-color: #306175;
+}
+
+#sky{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: $skyheight;
+  background: #5487c5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5487c5 0%, #9ac5e3 73%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5487c5), color-stop(73%,#9ac5e3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5487c5 0%,#9ac5e3 73%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5487c5 0%,#9ac5e3 73%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5487c5 0%,#9ac5e3 73%); /* IE10+ */
+  background: linear-gradient(to bottom,  #5487c5 0%,#9ac5e3 73%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5487c5', endColorstr='#9ac5e3',GradientType=0 ); /* IE6-9 */
+
+}
+
+#distant-hill-3{
+  background: url(/assets/sutro_hill.png) no-repeat;
+  position: absolute;
+  left: 270px;
+  top: 130px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 10;
+}
+
+#distant-hill{
+  background: url(/assets/headland.png) no-repeat;
+  position: absolute;
+  left: 305px;
+  top: 140px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 15;
+}
+
+#distant-hill-2{
+  background: url(/assets/headland.png) no-repeat;
+  position: absolute;
+  left: 70px;
+  top: 135px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 20;
+}
+
+#sutro-hill{
+  background: url(/assets/sutro_hill.png) no-repeat;
+  position: absolute;
+  left: 325px;
+  top: 155px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 25;
+}
+
+#headland{
+  background: url(/assets/headland.png) no-repeat;
+  position: absolute;
+  left: 282px;
+  top: 185px + $skyoffset;
+  width: 720px;
+  height: 391px;
+  z-index: 30;
+}
+
+#beach{
+  background: url(/assets/beach.png) no-repeat;
+  position: absolute;
+  left: 128px;
+  top: 226px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 35;
+}
+
+#headland-cliff{
+  background: url(/assets/headlands_cliff.png) no-repeat;
+  position: absolute;
+  left: 626px;
+  top: 220px + $skyoffset;
+  width: 700px;
+  height: 391px;
+  z-index: 40;
+}
+
+#bridge{
+  background: url(/assets/gg.png) no-repeat;
+  position: absolute;
+  left: -5px;
+  top: 20px + $skyoffset;
+  width: 770px;
+  height: 480px;
+  z-index: 45;
+}
+
+#weather_background{
+  z-index: 5;
+  height: $skyheight+$weatherExt;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#weather_midground{
+  z-index: 20;
+  height: $skyheight+$weatherExt;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0
+}
+
+#weather_foreground{
+  z-index: 50;
+  height: $skyheight+480px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0
+}
